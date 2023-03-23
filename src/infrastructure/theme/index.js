@@ -1,7 +1,3 @@
-// import { colors } from "./colos";
-// import { space, lineHeights } from "./spacing";
-// import { sizes } from "./sizes";
-// import { fonts, fontWeights, fontSizes } from "./fonts";
 import {
   colors,
   sizes,
