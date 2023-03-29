@@ -14,6 +14,7 @@ import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurant
 import { MapScreen } from "./src/features/restaurants/screens/map";
 import { SettingScreen } from "./src/features/restaurants/screens/settings";
 import { theme } from "./src/infrastructure/theme";
+import { restaurantRequest } from "./src/services/restaurants/restaurant.context";
 
 const Tab = createBottomTabNavigator();
 
@@ -41,9 +42,21 @@ const MyTabs = () => {
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-      <Tab.Screen name="Map" component={MapScreen} />
-      <Tab.Screen name="Settings" component={SettingScreen} />
+      <Tab.Screen
+        name="Restaurants"
+        component={RestaurantsScreen}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Map"
+        component={MapScreen}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={SettingScreen}
+        options={{ headerShown: false }}
+      />
     </Tab.Navigator>
   );
 };
